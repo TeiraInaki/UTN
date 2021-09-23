@@ -1,0 +1,29 @@
+* {
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.heading {
+  text-align: center;
+  background-color: grey;
+}
+
+.perfil {
+  --my-altura: 5rem;
+  width: var(--my-altura);
+  position: relative;
+  left: calc(50vw - var(--my-altura));
+}
+
+.datos {
+  background-color: red;
+}
+
+.pregunta {
+  background-color: blue;
+}
+
+.formulario {
+  background-color: grey;
+}
