@@ -1,12 +1,13 @@
 * {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
-  background-color: black;
+  border-radius: 7px;
 }
 
 .heading {
   text-align: center;
-  background-color: grey;
+  background-color: black;
+  box-shadow: 0 0 10px white;
 }
 
 .perfil {
@@ -17,13 +18,18 @@
 }
 
 .datos {
-  background-color: red;
+  box-shadow: 0 0 5px black;
 }
 
 .pregunta {
-  background-color: blue;
+  background-color: black;
+  box-shadow: 0 0 10px white;
 }
 
 .formulario {
   background-color: grey;
+}
+
+body {
+  background: linear-gradient(to right, black, grey);
 }
