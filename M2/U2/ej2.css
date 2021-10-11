@@ -1,0 +1,52 @@
+* {
+  font-family: sans-serif;
+}
+
+.bloque {
+  border: solid;
+  /* Inicio el flex */
+  display: flex;
+  margin: 0px;
+  width: 50vw;
+  height: 49.9vh;
+  /*Indico la direccion del eje principal */
+  flex-direction: row;
+  /* Indico la posición del eje secundario*/
+  align-items: center;
+  /* Indico posición del contenedor en general*/
+  position: absolute;
+}
+
+.columna {
+  text-align: center;
+  vertical-align: middle;
+  line-height: calc(50vh / 3);
+  color: white;
+}
+
+.rojo {
+  background-color: red;
+  height: calc(50vh / 3);
+  width: calc(50vw / 3);
+  margin: 0px;
+  /* Indico que se posicione a la izquierda del inicio del flex */
+  float: left;
+}
+
+.azul {
+  background-color: blue;
+  height: calc(50vh / 3);
+  width: calc(50vw / 3);
+  margin: 0px;
+  /* Indico que se posicione a la izquierda del inicio del flex */
+  float: left;
+}
+
+.verde {
+  background-color: green;
+  height: calc(50vh / 3);
+  width: calc(50vw / 3);
+  margin: 0px;
+  /* Indico que se posicione a la izquierda del inicio del flex */
+  float: left;
+}
