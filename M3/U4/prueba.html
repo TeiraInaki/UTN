@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="./prueba.js"></script>
+
+</head>
+<body>
+    
+    <p id="mensaje">
+        Hola
+    </p>
+
+    <div id="div1">El texto siguiente es dinamico</div>
+
+    <script>
+        function agregarElemento()
+        {
+            var newDiv = document.createElement('div');
+            newDiv.innerText = "Hola!";
+
+            document.body.appendChild(newDiv);
+        }
+        agregarElemento();
+        agregarElemento();
+        agregarElemento();
+    </script>
+
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+
+    <script>
+        var elemento = document.getElementById("div3");
+        elemento.remove();
+    </script>
+
+    <p id="demo">Este elemento tiene espacio extra y contiene <span>una etiqueta span</span></p>
+
+    <script>
+        alert(document.getElementById("demo").innerHTML);
+
+        alert(document.getElementById("demo").innerText);
+
+        alert(document.querySelector("#div1").id);
+    </script>
+
+    <script>
+        var mensaje = document.getElementById("mensaje");
+        mensaje.style.backgroundColor = "red";
+    </script>
+
+    <button>Hey</button>
+
+    <script>
+        var boton = document.getElementsByTagName("button")[0];
+        boton.addEventListener("click", function(){alert("Hey!")}, false);
+    </script>
+
+</body>
+</html>

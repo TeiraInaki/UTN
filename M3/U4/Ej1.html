@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+    <style>
+        body {font-family: sans-serif;}
+        #container {display: flex;}
+        .boton{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bolder;
+        }
+        .boton:hover{cursor: pointer;}
+        #boton1 {color: red;}
+        #boton2 {color: blue;}
+        #boton3 {color: green;}
+    </style>
+</head>
+<body>
+    
+<!-- Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento. Cada cuadrado
+deberá tener un color distinto. -->
+    <div id="container">
+        <div id="boton1" class="boton">Rojo!</div>
+        <div id="boton2" class="boton">Azul!</div>
+        <div id="boton3" class="boton">Verde!</div>
+    </div>
+
+    <script>
+        var boton1 = document.getElementById("boton1");
+        var boton2 = document.getElementById("boton2");
+        var boton3 = document.getElementById("boton3");
+
+        var body = document.querySelector("body");
+
+        boton1.onclick = function(event){ body.style.backgroundColor = "red";};
+
+        boton2.onclick = function (event) { body.style.backgroundColor = "blue"; };
+
+        boton3.onclick = function (event) { body.style.backgroundColor = "green"; };
+
+    </script>
+
+</body>
+</html>

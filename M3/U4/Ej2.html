@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+
+    <style>
+        
+        p{
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>Escribi algo</p>
+    <textarea></textarea>
+    <p id=conteo></p>
+
+    <script>
+        var textarea = document.querySelector("textarea");
+        var contador = 0;
+        var conteo = document.getElementById("conteo");
+
+        textarea.addEventListener("input",
+        function(){
+            conteo.innerText = textarea.value.length;
+        }
+        );
+
+    </script>
+
+</body>
+</html>
